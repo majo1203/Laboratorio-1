@@ -1,0 +1,122 @@
+ordenar registros
+hacer funcion ordenar
+la func va a recibir array de personas y cantidad(minimamente) para la cantidad debo hacer un ciclo
+
+void ordenar (ePersona pers[], int cantidad){
+	int i, j;
+	ePersona aux;//es una estructura, no es un array
+	for (i=0; i<cantidad-1;i++){
+		for (j=i;j<cantidad;j++){
+			if(strcmp(pers[i].apellido, pers[j].apellido)>0){
+				aux=pers[i];//uso el = porque es un solo elemento de la estructura
+				pers[i]=pers[j];
+				pers[j]=aux;
+			}
+		}
+	} 
+}
+
+strcpy son:
+3 mas para dia
+3 mas para mes
+3 mas para el año
+
+si tomo un solo elemento de un array puedo usar el = para decir por ej que nro2 tenga el mismo dato que nro
+
+int nro, nro2;
+nro=3
+nro2=nro; //nro2 va a ser 3
+
+
+
+
+typedef struct{
+    int id;
+    char descripcion[31];
+}eNacion;
+
+typedef struct{
+	...
+    int idNacionalidad;//adentro de ePersona meto los datos que se repiten mas de una vez en los registros
+    ...
+}ePersona;//a veces no se puede poner una estructura dentro de otra estructura, para no repetir descripciones
+
+no se pueden hardcodear datos dentro de una estructura
+
+int idNacionalidad dato tipificado: hago listado de nacionalidades y el usuario selecciona un nro de la lista, por eso es int
+
+identificar tipo de relaciones
+1:1 persona-nacion
+1:muchos nacionalidad-personas 1..* 1(uml)
+muchos:muchos ej: interprete-canciones una cancion es cantada por un unico interprete, no la canta solo esa persona, la puedo adquirir versionada por otros interpretes
+
+cancion|interprete
+	1		1..*
+   1..*		1
+
+ resulta en cancion 1..* 1..* interprete 
+
+ la que no se repite la coloco en aquella que puede ser mas de uno
+
+ eNacion nacionalidades []={1,"Argentina",2,"Peru",3,"Uruguay"}; listar codigo de descripcion para que el usuario seleccione e ingrese
+
+ prototipo antes del main
+ variable local solo dentro de la funcion
+ reservada void no recibe parametros o valor
+ si se cant de iteraciones for
+ compilador
+
+ v o f
+ funcion siempre parametros f
+ una funcion puede devolver mas de un valor f
+
+ cual de los ciclos
+ for(i=0;i<=100;i+=3){
+ 	printf ("%d\n",i);
+ }
+
+ equivale a
+ i=0;
+
+ while (i<=100){
+ 	printf("%d\",i);
+ 	i+=3;
+ }
+
+ tiene validez la variable local si se declara variable global y local en con el mismo nombre
+
+preguntar que modificar
+agregar a estructura de persona el dato dni(no importa si cumple el total de digitos del dni posta)
+buscar si existe el dni para que no se pueda dar de alta en ese caso
+hacer funcion q devuelva existencia de dni (si encontro o no, dos valores posibles 0 y 1) le paso el array de personas. la cantidad de elementos. uso aux para meter el dato
+
+ingrese dni 1 (eso es un parametro mas de la funcion buscarPorDni) 
+si encuentro hago break, y retorno
+PROTOTIPO
+buscarPorDni(ePersona pers[], int cantidad, int dniAux);
+	int retorno=0; //significa que no lo encontro
+	for(){recorro
+		if(){
+			retorno=1;
+			break;//para romper for
+		}
+	}
+	return retorno;
+
+OTRA FORMA
+	buscarPorDni(ePersona pers[], int cantidad, int dniAux);
+	int retorno=-1; //no se que significa
+	for(){recorro
+		if(){
+			retorno=i;//para decir cuàl es el dato ingresado
+			break;//para romper for
+		}
+	}
+	return retorno;
+
+	HACER LA BIBLIOTECA DE TODOS LOS GET
+	INT CHAR STRING
+con que termina el subindice de un array?
+con la cantdeElementos o cantdeElementos-1???
+
+
