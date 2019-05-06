@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1557100149 source:c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\pp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pp1.h"
+
+1557100866 c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\pp1\pp1.h
+	<stdio.h>
+	<stdlib.h>
+
+1557089173 source:c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\pp1\almuerzo.c
+
+1557089199 source:c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\pp1\menu.c
+
+1557099950 source:c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\pp1\empleado.c
+	"pp1.h"
+

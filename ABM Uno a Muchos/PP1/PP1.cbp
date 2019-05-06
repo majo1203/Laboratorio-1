@@ -31,9 +31,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="almuerzo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="empleado.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pp1.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

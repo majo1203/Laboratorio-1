@@ -219,7 +219,6 @@ int contarCarlos(eEmpleado lista[], int tam)
 }
 
 
-
 int buscarLegajo(eEmpleado lista[], int tam, int legajo)
 {
 

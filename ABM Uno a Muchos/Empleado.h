@@ -37,8 +37,9 @@ typedef struct
 typedef struct
 {
     eEmpleado legajo;
-    eSector idSector;
     listaEmpleSector[int];
+    eSector idSector;
+
     int cantHoras;
 
 }eEmpleadoSector;

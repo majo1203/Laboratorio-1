@@ -18,3 +18,15 @@
 1555982199 c:\users\alumno\desktop\abm uno a muchos\empleado.h
 	<stdio.h>
 
+1557083465 source:c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\empleado.c
+	"Empleado.h"
+
+1557100491 c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\empleado.h
+	<stdio.h>
+
+1557083465 source:c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\main.c
+	<stdlib.h>
+	"Empleado.h"
+
+1557083530 source:c:\users\jesus\desktop\majo\laboratorio-1\abm uno a muchos\do.c
+
